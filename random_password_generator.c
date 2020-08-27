@@ -34,6 +34,9 @@ int main(void) {
 	password[length] = '\0';
 
 	printf("\nYour password is: %s\n\n", password);
+	
+	/* frees the memory allocated before */
+	free(password);
 	return (EXIT_SUCCESS);
 }
 
